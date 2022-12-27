@@ -44,10 +44,10 @@ function playGame(parameter) {
 
 //function to check score, print it to html and announce champion once they reach 5. If they choose to play again the page reloads, if they cancel or close dialog they are redirected to the gamover page
 function checkScore() {
-    if (humanScore != 5 && compScore != 5) {
+    if (humanScore != 3 && compScore != 3) {
         document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
         document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
-    } else if (compScore == 5) {
+    } else if (compScore == 3) {
         document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
         document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
         if (confirm('The Computer has defeated you in this match, they scored ' + compScore + ' against your score of ' + humanScore + ' would you like to play again?') == true) {
@@ -56,7 +56,7 @@ function checkScore() {
             document.location.href = "/rock_paper_scissors/gameover.htm";
         }
 
-    } else if (humanScore == 5) {
+    } else if (humanScore == 3) {
         document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
         document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
         if (confirm('WOOOOOHOOOOOO..... You have defeated the computer this match, they scored ' + compScore + ' against your score of ' + humanScore + ' would you like to play again?') == true) {

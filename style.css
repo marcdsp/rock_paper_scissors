@@ -4,7 +4,7 @@
     animation-iteration-count:$iterate;
   }
   
-  html,body{padding:0;margin:0;background:rgba(255, 255, 255, 0.908);}
+  html,body{padding:0;margin:0;background:rgb(210, 222, 252);}
   
   p {
     font-family: 'VT323', ;
@@ -32,6 +32,7 @@
   }
 
   body {
+    padding: 8PX;
     font-family: 'Courier New', Courier, monospace;
     height: 50vh;
     display: flex;

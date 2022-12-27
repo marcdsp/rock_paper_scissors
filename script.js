@@ -1,8 +1,10 @@
+//set global score variables
 var humanScore = 0;
 var compScore = 0;
 
 
-function humanWeapon(parameter) {
+//onclick in HTML triggers the game by passing a parameter to this function, it then checks against a random computer choice to decide who wins the game. After a winner is chosen the checkscore function is invoked
+function playGame(parameter) {
     let humanChoice = "" + parameter + "";
     const options = ["Rock", "Paper", "Scissors"];
     const random = Math.floor(Math.random() * options.length);
@@ -40,29 +42,28 @@ function humanWeapon(parameter) {
     }
 }
 
+//function to check score, print it to html and announce champion once they reach 5. If they choose to play again the page reloads, if they cancel or close dialog they are redirected to the gamover page
 function checkScore() {
     if (humanScore != 5 && compScore != 5) {
-        document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore +"";
-        document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore +"";
+        document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
+        document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
     } else if (compScore == 5) {
-        document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore +"";
-        document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore +"";
-        if (confirm('The Computer has defeated you in this match, they scored ' + compScore + ' against your score of ' + humanScore + 'would you like to play again?') == true){
+        document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
+        document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
+        if (confirm('The Computer has defeated you in this match, they scored ' + compScore + ' against your score of ' + humanScore + 'would you like to play again?') == true) {
             document.location.href = "/index.htm";
-        }
-        else {
+        } else {
             document.location.href = "/gameover.htm";
         }
-   
+
     } else if (humanScore == 5) {
-        document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore +"";
-        document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore +"";
-        if (confirm('WOOOOOHOOOOOO..... You have defeated the computer this match, they scored ' + compScore + ' against your score of ' + humanScore + 'would you like to play again?') == true){
+        document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
+        document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
+        if (confirm('WOOOOOHOOOOOO..... You have defeated the computer this match, they scored ' + compScore + ' against your score of ' + humanScore + 'would you like to play again?') == true) {
             document.location.href = "/index.htm";
-        }
-        else {
+        } else {
             document.location.href = "/gameover.htm";
         }
-   
-}
+
+    }
 }

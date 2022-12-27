@@ -24,43 +24,41 @@ function humanWeapon(parameter) {
         console.log(options[random]);
         console.log(humanChoice)
 
-/*
-    if (computerChoice == humanChoice){
+    if (options[random] == humanChoice){
         alert("It's a TIE!!!");
         winner = "Tie"
  
     }
-    else if (computerChoice == "Rock" && humanChoice == "Scissors"){
-        alert("You Chose " + humanChoice + " and the computer chose " + computerChoice + "....You LOSE!!!");
+    else if (options[random] == "Rock" && humanChoice == "Scissors"){
+        alert("You Chose " + humanChoice + " and the computer chose " + options[random] + "....You LOSE!!!");
         winner = "Computer"
  
     }
-    else if (computerChoice == "Rock" && humanChoice == "Paper"){
-        alert("You Chose " + humanChoice + " and the computer chose " + computerChoice + "....You WIN!!!");
+    else if (options[random] == "Rock" && humanChoice == "Paper"){
+        alert("You Chose " + humanChoice + " and the computer chose " + options[random] + "....You WIN!!!");
         winner = "Human"
  
     }
-    else if (computerChoice == "Paper" && humanChoice == "Rock"){
-        alert("You Chose " + humanChoice + " and the computer chose " + computerChoice + "....You LOSE!!!");
+    else if (options[random] == "Paper" && humanChoice == "Rock"){
+        alert("You Chose " + humanChoice + " and the computer chose " + options[random] + "....You LOSE!!!");
         winner = "Computer"
  
     }
-    else if (computerChoice == "Paper" && humanChoice == "Scissors"){
-        alert("You Chose " + humanChoice + " and the computer chose " + computerChoice + "....You WIN!!!")
+    else if (options[random] == "Paper" && humanChoice == "Scissors"){
+        alert("You Chose " + humanChoice + " and the computer chose " + options[random] + "....You WIN!!!")
         winner = "Human"
  
     }
-    else if (computerChoice == "Scissors" && humanChoice == "Paper"){
-        alert("You Chose " + humanChoice + " and the computer chose " + computerChoice + "....You LOSE!!!")
+    else if (options[random] == "Scissors" && humanChoice == "Paper"){
+        alert("You Chose " + humanChoice + " and the computer chose " + options[random] + "....You LOSE!!!")
         winner = "Computer"
  
     }
-    else if (computerChoice == "Scissors" && humanChoice == "Rock"){
-        alert("You Chose " + humanChoice + " and the computer chose " + computerChoice + "....You WIN!!!")
+    else if (options[random] == "Scissors" && humanChoice == "Rock"){
+        alert("You Chose " + humanChoice + " and the computer chose " + options[random] + "....You WIN!!!")
         winner = "Human"
  
     } 
 }
     }
 
-*/

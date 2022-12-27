@@ -27,11 +27,34 @@
     color: chartreuse;
   }
 
-  body {
+  .mainImage {
+    max-width: 200px;
+  }
 
+  body {
+    font-family: 'Courier New', Courier, monospace;
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
+
+  button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+
+}
+
+.itemgrp {
+    display: flex;
+    padding: 16px;
+    max-width: 128px;
+    justify-content: center;
+}

@@ -51,18 +51,18 @@ function checkScore() {
         document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
         document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
         if (confirm('The Computer has defeated you in this match, they scored ' + compScore + ' against your score of ' + humanScore + 'would you like to play again?') == true) {
-            document.location.href = "/index.htm";
+            document.location.href = "/rock_paper_scissors/index.htm";
         } else {
-            document.location.href = "/gameover.htm";
+            document.location.href = "/rock_paper_scissors/gameover.htm";
         }
 
     } else if (humanScore == 5) {
         document.getElementById("theirScore").innerHTML = "Computer Score is " + compScore + "";
         document.getElementById("yourScore").innerHTML = "Your Score is " + humanScore + "";
         if (confirm('WOOOOOHOOOOOO..... You have defeated the computer this match, they scored ' + compScore + ' against your score of ' + humanScore + 'would you like to play again?') == true) {
-            document.location.href = "/index.htm";
+            document.location.href = "/rock_paper_scissors/index.htm";
         } else {
-            document.location.href = "/gameover.htm";
+            document.location.href = "/rock_paper_scissors/gameover.htm";
         }
 
     }
